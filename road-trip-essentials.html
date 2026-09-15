@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Road Trip Essentials – RidePinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(15,15,35,0.95); backdrop-filter: blur(10px); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { text-decoration: none; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+        .nav-logo span { color: #e94560; }
+        .nav-links { list-style: none; display: flex; align-items: center; gap: 32px; }
+        .nav-links a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #fff; }
+        .nav-cta { background: #e94560; color: #fff !important; padding: 8px 20px; border-radius: 8px; }
+        .nav-cta:hover { background: #d63851; }
+        .hero { position: relative; height: 50vh; min-height: 400px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,15,35,0.85), rgba(26,26,46,0.7)); }
+        .hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 40px 60px; max-width: 800px; }
+        .hero-badge { display: inline-block; background: rgba(233,69,96,0.2); color: #e94560; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; border-radius: 6px; border: 1px solid rgba(233,69,96,0.3); margin-bottom: 20px; }
+        .hero-title { font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+        .hero-meta { font-size: 14px; color: #888; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #e94560; text-decoration: none; font-weight: 600; font-size: 14px; margin-bottom: 32px; }
+        .back-link:hover { gap: 12px; }
+        .content-card { max-width: 800px; margin: -60px auto 60px; background: #fff; border-radius: 16px; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); position: relative; z-index: 2; }
+        .content-card h2 { font-family: 'Poppins', sans-serif; font-size: 28px; color: #1a1a2e; margin: 32px 0 16px; }
+        .content-card h2:first-of-type { margin-top: 0; }
+        .content-card p { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 16px; }
+        .content-card ul, .content-card ol { margin: 16px 0; padding-left: 24px; }
+        .content-card li { margin-bottom: 12px; line-height: 1.7; color: #555; }
+        .content-card strong { color: #1a1a2e; }
+        .tip-box { background: #f0f4ff; border-left: 4px solid #3b82f6; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+        .tip-box p { margin-bottom: 0; color: #1a1a2e; font-weight: 500; }
+        .footer { background: #0f0f23; padding: 40px; text-align: center; }
+        .footer p { color: #666; font-size: 13px; }
+        .footer a { color: #e94560; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav { padding: 12px 20px; }
+            .nav-links { display: none; }
+            .hero-title { font-size: 28px; }
+            .content-card { margin: -40px 16px 40px; padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">🏍️ Ride<span>Pinas</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1673515335048-ace62cf73a26?w=1200&q=80" alt="Road Trip">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Guide</span>
+            <h1 class="hero-title">Road Trip Essentials</h1>
+            <p class="hero-meta">What every rider needs — tools, gear, and preparation for the road.</p>
+        </div>
+    </section>
+
+    <div class="content-card">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+
+        <h2>The Ultimate Road Trip Checklist</h2>
+        <p>Planning a motorcycle road trip in the Philippines? Here's everything you need to prepare — from gear to documents to mindset. This guide covers both overnight rides and multi-day adventures.</p>
+
+        <h2>Documents to Bring</h2>
+        <ul>
+            <li><strong>Driver's license</strong> — make sure it's valid and has the motorcycle restriction code</li>
+            <li><strong>OR/CR of your motorcycle</strong> — original or certified copy. Traffic enforcers will ask for this.</li>
+            <li><strong>Valid ID</strong> — secondary ID in case of emergencies</li>
+            <li><strong>Cash</strong> — many provincial areas don't accept cards. Bring enough for gas, food, toll, and emergencies.</li>
+            <li><strong>Emergency contacts</strong> — written on paper, not just saved in your phone</li>
+        </ul>
+
+        <div class="tip-box">
+            <p>💡 <strong>Budget Tip:</strong> For a 3-day ride, prepare at least ₱3,000–5,000 per day for gas, food, and accommodation. Provincial lodging is cheap (₱500–1,000/night).</p>
+        </div>
+
+        <h2>Motorcycle Preparation</h2>
+        <p>Your bike is your lifeline on the road. Do a thorough check before any long trip:</p>
+        <ol>
+            <li><strong>Tires</strong> — check pressure and tread depth. Bring a tire repair kit for tubeless tires.</li>
+            <li><strong>Brakes</strong> — test front and rear brakes. Check brake fluid level.</li>
+            <li><strong>Chain</strong> — clean, lubricate, and adjust tension if needed.</li>
+            <li><strong>Oil</strong> — check level and color. Change if it's due.</li>
+            <li><strong>Lights</strong> — headlight, tail light, brake light, turn signals. All must work.</li>
+            <li><strong>Horn</strong> — test it. You'll use it a lot in the Philippines.</li>
+        </ol>
+
+        <h2>Packing List</h2>
+        <p>Pack light but smart. Here's what goes in my top box and bag:</p>
+        <ul>
+            <li><strong>Riding gear</strong> — helmet, jacket, gloves, rain poncho</li>
+            <li><strong>Tools</strong> — basic wrench set, tire repair kit, zip ties, electrical tape, duct tape</li>
+            <li><strong>Electronics</strong> — phone mount, power bank, charging cables</li>
+            <li><strong>Personal items</strong> — toiletries, sunscreen, alcohol wipes, towel</li>
+            <li><strong>Clothes</strong> — 2 sets of riding clothes, 1 set of casual clothes, jacket for cold areas (Baguio, Sagada, Banaue)</li>
+            <li><strong>First aid</strong> — bandages, Betadine, paracetamol, Biogesic, oral rehydration salts</li>
+        </ul>
+
+        <div class="tip-box">
+            <p>⚠️ <strong>Weather Warning:</strong> Always bring a rain poncho even if the forecast says sunny. Philippine weather is unpredictable, especially in the mountains.</p>
+        </div>
+
+        <h2>On the Road Tips</h2>
+        <ul>
+            <li><strong>Start early</strong> — leave by 5-6 AM to avoid traffic and maximize daylight</li>
+            <li><strong>Fill up often</strong> — don't let your tank go below half, especially in remote areas</li>
+            <li><strong>Use Waze or Google Maps</strong> — download offline maps for areas with poor signal</li>
+            <li><strong>Take photos at viewpoints</strong> — but don't stop in dangerous spots</li>
+            <li><strong>Eat local</strong> — try the carinderia (local eatery) food. It's cheap, authentic, and delicious.</li>
+            <li><strong>Respect the locals</strong> — smile, say thank you, and be polite. Filipinos are warm and helpful.</li>
+        </ul>
+
+        <h2>After the Ride</h2>
+        <p>When you get home, don't forget to:</p>
+        <ul>
+            <li>Clean and wash your motorcycle</li>
+            <li>Check for any damage or loose parts</li>
+            <li>Lube the chain</li>
+            <li>Back up your photos</li>
+            <li>Share your experience on RidePinas!</li>
+        </ul>
+
+        <p>Road trips are what motorcycle riding is all about. The Philippines has some of the most beautiful roads in Southeast Asia — from coastal highways to mountain passes. Plan well, ride safe, and enjoy every kilometer.</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 <a href="index.html">RidePinas</a>. Made with ❤️ for Filipino Riders</p>
+    </footer>
+</body>
+</html>

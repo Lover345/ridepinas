@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exploring Luzon – RidePinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(15,15,35,0.95); backdrop-filter: blur(10px); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { text-decoration: none; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+        .nav-logo span { color: #e94560; }
+        .nav-links { list-style: none; display: flex; align-items: center; gap: 32px; }
+        .nav-links a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #fff; }
+        .nav-cta { background: #e94560; color: #fff !important; padding: 8px 20px; border-radius: 8px; }
+        .nav-cta:hover { background: #d63851; }
+        .hero { position: relative; height: 50vh; min-height: 400px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,15,35,0.85), rgba(26,26,46,0.7)); }
+        .hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 40px 60px; max-width: 800px; }
+        .hero-badge { display: inline-block; background: rgba(233,69,96,0.2); color: #e94560; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; border-radius: 6px; border: 1px solid rgba(233,69,96,0.3); margin-bottom: 20px; }
+        .hero-title { font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+        .hero-meta { font-size: 14px; color: #888; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #e94560; text-decoration: none; font-weight: 600; font-size: 14px; margin-bottom: 32px; }
+        .back-link:hover { gap: 12px; }
+        .content-card { max-width: 800px; margin: -60px auto 60px; background: #fff; border-radius: 16px; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); position: relative; z-index: 2; }
+        .content-card h2 { font-family: 'Poppins', sans-serif; font-size: 28px; color: #1a1a2e; margin: 32px 0 16px; }
+        .content-card h2:first-of-type { margin-top: 0; }
+        .content-card p { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 16px; }
+        .content-card ul, .content-card ol { margin: 16px 0; padding-left: 24px; }
+        .content-card li { margin-bottom: 12px; line-height: 1.7; color: #555; }
+        .content-card strong { color: #1a1a2e; }
+        .tip-box { background: #f0f4ff; border-left: 4px solid #3b82f6; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+        .tip-box p { margin-bottom: 0; color: #1a1a2e; font-weight: 500; }
+        .footer { background: #0f0f23; padding: 40px; text-align: center; }
+        .footer p { color: #666; font-size: 13px; }
+        .footer a { color: #e94560; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav { padding: 12px 20px; }
+            .nav-links { display: none; }
+            .hero-title { font-size: 28px; }
+            .content-card { margin: -40px 16px 40px; padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">🏍️ Ride<span>Pinas</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1714746093466-10ba37f556d1?w=1200&q=80" alt="Exploring Luzon">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Luzon</span>
+            <h1 class="hero-title">Exploring Luzon</h1>
+            <p class="hero-meta">Discover the best routes and hidden gems across Luzon island.</p>
+        </div>
+    </section>
+
+    <div class="content-card">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+
+        <h2>Why Luzon?</h2>
+        <p>Luzon is the largest island in the Philippines and home to some of the most diverse landscapes in the country. From the rice terraces of the Cordilleras to the volcanoes of Bicol, from the beaches of La Union to the heritage towns of Ilocos — Luzon has everything a motorcycle rider could want.</p>
+        <p>I've been riding in Luzon since 2024, and every trip reveals something new. Here's a guide to the best routes and destinations.</p>
+
+        <h2>Top Routes for Riders</h2>
+
+        <p><strong>1. Marilaque Highway (Rizal → Laguna)</strong></p>
+        <ul>
+            <li><strong>Distance:</strong> ~100km from Manila</li>
+            <li><strong>Ride time:</strong> 3-4 hours</li>
+            <li><strong>Highlights:</strong> Winding mountain roads, scenic views, local food stops</li>
+            <li><strong>Best for:</strong> Day rides, beginners</li>
+        </ul>
+
+        <p><strong>2. Kennon Road (Manila → Baguio)</strong></p>
+        <ul>
+            <li><strong>Distance:</strong> ~250km from Manila</li>
+            <li><strong>Ride time:</strong> 5-6 hours</li>
+            <li><strong>Highlights:</strong> Zigzag roads,pine trees, cooler temperatures</li>
+            <li><strong>Best for:</strong> Weekend rides, intermediate riders</li>
+        </ul>
+
+        <p><strong>3. Halsema Highway (Baguio → Sagada/Banaue)</strong></p>
+        <ul>
+            <li><strong>Distance:</strong> ~150km from Baguio</li>
+            <li><strong>Ride time:</strong> 4-5 hours</li>
+            <li><strong>Highlights:</strong> Highest road in the Philippines, rice terraces,sea of clouds</li>
+            <li><strong>Best for:</strong> Experienced riders, adventure seekers</li>
+        </ul>
+
+        <p><strong>4. Bicol Express (Manila → Albay)</strong></p>
+        <ul>
+            <li><strong>Distance:</strong> ~500km from Manila</li>
+            <li><strong>Ride time:</strong> 9-10 hours</li>
+            <li><strong>Highlights:</strong> Mayon Volcano, Bicolano food, coastal roads</li>
+            <li><strong>Best for:</strong> Long-distance riders, multi-day trips</li>
+        </ul>
+
+        <div class="tip-box">
+            <p>💡 <strong>Pro Tip:</strong> Start any Luzon road trip at 4-5 AM to beat Manila traffic. You'll be past the SLEX/NLEX toll plazas before sunrise.</p>
+        </div>
+
+        <h2>Hidden Gems</h2>
+        <p>Beyond the popular destinations, Luzon has countless hidden spots worth discovering:</p>
+        <ul>
+            <li><strong>Dingalan, Aurora</strong> — a quiet coastal town with beautiful beaches and a laid-back vibe. My personal favorite for short getaways.</li>
+            <li><strong>Real, Quezon</strong> — a remote surf town that feels like the edge of the world. The ride there is an adventure itself.</li>
+            <li><strong>Mount Pinatubo</strong> — the crater lake is stunning. You need a 4x2 to reach the jump-off point, but the trek is worth it.</li>
+            <li><strong>Caramoan Islands</strong> — pristine beaches and islands that rival Palawan but with fewer tourists.</li>
+            <li><strong>Apayao</strong> — the least-visited province in the Philippines. Untouched nature and indigenous culture.</li>
+        </ul>
+
+        <h2>Best Time to Ride</h2>
+        <p>The Philippines has two main seasons:</p>
+        <ul>
+            <li><strong>Amihan (dry season):</strong> November to May — best riding weather. Cool and dry.</li>
+            <li><strong>Habagat (wet season):</strong> June to October — avoid long rides if possible. Flash floods and landslides are common.</li>
+        </ul>
+        <p>The best months for riding are <strong>December to March</strong> — cool temperatures, minimal rain, and clear skies.</p>
+
+        <div class="tip-box">
+            <p>⚠️ <strong>Weather Alert:</strong> Always check the weather forecast before riding. PAGASA updates are available online and on their app. If a typhoon is approaching, stay home.</p>
+        </div>
+
+        <h2>Food Stops</h2>
+        <p>No road trip is complete without trying the local food. Here are must-tries along the way:</p>
+        <ul>
+            <li><strong>Bulacan</strong> — ensaymada, pan de sal, and longganisa</li>
+            <li><strong>Pampanga</strong> — sisig (the birthplace of sisig!)</li>
+            <li><strong>Tarlac</strong> — lechon and local delicacies</li>
+            <li><strong>Pangasinan</strong> — bangus (milkfish) and bagoong</li>
+            <li><strong>La Union</strong> — seafood and surfing vibes</li>
+            <li><strong>Benguet</strong> — strawberries and vegetable dishes</li>
+            <li><strong>Bicol</strong> — Bicol Express, laing, and pili nuts</li>
+        </ul>
+
+        <p>Luzon is an incredible island to explore by motorcycle. Every ride teaches you something new — about the road, about the Philippines, and about yourself. Start planning your next ride today.</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 <a href="index.html">RidePinas</a>. Made with ❤️ for Filipino Riders</p>
+    </footer>
+</body>
+</html>
