@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intramuros – RidePinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(15,15,35,0.95); backdrop-filter: blur(10px); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { text-decoration: none; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+        .nav-logo span { color: #e94560; }
+        .nav-links { list-style: none; display: flex; align-items: center; gap: 32px; }
+        .nav-links a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #fff; }
+        .nav-cta { background: #e94560; color: #fff !important; padding: 8px 20px; border-radius: 8px; }
+        .nav-cta:hover { background: #d63851; }
+        .hero { position: relative; height: 60vh; min-height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,15,35,0.85), rgba(26,26,46,0.7)); }
+        .hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 40px 60px; max-width: 800px; }
+        .hero-badge { display: inline-block; background: rgba(233,69,96,0.2); color: #e94560; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; border-radius: 6px; border: 1px solid rgba(233,69,96,0.3); margin-bottom: 20px; }
+        .hero-title { font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+        .hero-sub { font-size: 18px; color: #ccc; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #e94560; text-decoration: none; font-weight: 600; font-size: 14px; margin-bottom: 32px; }
+        .back-link:hover { gap: 12px; }
+        .content-card { max-width: 860px; margin: -60px auto 60px; background: #fff; border-radius: 16px; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); position: relative; z-index: 2; }
+        .facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0 32px; }
+        .fact-item { padding: 12px 16px; background: #f8f9fa; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+        .fact-item strong { color: #1a1a2e; display: block; margin-bottom: 2px; }
+        .content-card h2 { font-family: 'Poppins', sans-serif; font-size: 28px; color: #1a1a2e; margin: 32px 0 16px; }
+        .content-card h2:first-of-type { margin-top: 0; }
+        .content-card p { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 16px; }
+        .content-card ul, .content-card ol { margin: 16px 0; padding-left: 24px; }
+        .content-card li { margin-bottom: 12px; line-height: 1.7; color: #555; }
+        .content-card strong { color: #1a1a2e; }
+        .tip-box { background: #f0f4ff; border-left: 4px solid #3b82f6; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+        .tip-box p { margin-bottom: 0; color: #1a1a2e; font-weight: 500; }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+        .gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+        .footer { background: #0f0f23; padding: 40px; text-align: center; }
+        .footer p { color: #666; font-size: 13px; }
+        .footer a { color: #e94560; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav { padding: 12px 20px; }
+            .nav-links { display: none; }
+            .hero-title { font-size: 28px; }
+            .content-card { margin: -40px 16px 40px; padding: 24px; }
+            .facts-grid, .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">🏍️ Ride<span>Pinas</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="images/destinations/intramuros-main.jpg" alt="Intramuros">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Luzon</span>
+            <h1 class="hero-title">Intramuros</h1>
+            <p class="hero-sub">The Oldest District in Manila</p>
+        </div>
+    </section>
+
+    <div class="content-card">
+        <a href="destinations.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Destinations
+        </a>
+
+        <h2>📍 Quick Facts</h2>
+        <div class="facts-grid">
+            <div class="fact-item"><strong>Location:</strong> Manila, NCR</div>
+            <div class="fact-item"><strong>Distance:</strong> 0km (already in Manila)</div>
+            <div class="fact-item"><strong>Ride Time:</strong> 30 min from city center</div>
+            <div class="fact-item"><strong>Road Type:</strong> Paved, city roads</div>
+            <div class="fact-item"><strong>Best Time:</strong> December–February</div>
+            <div class="fact-item"><strong>Parking:</strong> Paid parking at Fort Santiago</div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/destinations/intramuros-1.jpg" alt="Intramuros 1">
+            <img src="images/destinations/intramuros-2.jpg" alt="Intramuros 2">
+            <img src="images/destinations/intramuros-3.jpg" alt="Intramuros 3">
+        </div>
+
+        <h2>History</h2>
+        <p>Built in 1571 by the Spanish, Intramuros is the oldest district in Manila. Surrounded by thick walls that served as the center of Spanish colonial government in Asia. The name "Intramuros" means "within the walls" — the entire district is enclosed by massive stone fortifications.</p>
+        <p>During World War II, Intramuros was heavily damaged during the Battle of Manila in 1945. Most of the structures were reduced to ruins. After decades of neglect, restoration efforts began in the 1980s and continue today.</p>
+        <p>Today, it is a historic site full of old churches, museums, and cobblestone streets — perfect for riders who want to explore history.</p>
+
+        <h2>Why Visit?</h2>
+        <ul>
+            <li>Walk through 400+ years of Philippine history</li>
+            <li>Visit San Agustin Church, a UNESCO World Heritage Site</li>
+            <li>Explore Fort Santiago and Rizal Shrine</li>
+            <li>See the Manila Cathedral</li>
+            <li>Experience the cobblestone streets and Spanish colonial architecture</li>
+            <li>Visit museums: Bahay Tsinoy, Casa Manila, Baluarte de San Diego</li>
+        </ul>
+
+        <h2>If You Ride There</h2>
+        <ul>
+            <li>Park outside the walls — there's no parking inside Intramuros</li>
+            <li>Best to arrive early morning (before 10 AM) to avoid the heat</li>
+            <li>Wear comfortable shoes — lots of walking on cobblestone streets</li>
+            <li>Bring water and sunscreen — the area is exposed to sun</li>
+            <li>Try the local kakanin (rice cakes) from vendors near the churches</li>
+        </ul>
+
+        <div class="tip-box">
+            <p>💡 <strong>Rider Tip:</strong> From NLEX, take R-10 to Roxas Blvd, then turn right to Gen. Luna St. to reach Intramuros. Total ride from Manila is about 30 minutes depending on traffic.</p>
+        </div>
+
+        <h2>References</h2>
+        <ul>
+            <li>National Historical Commission of the Philippines</li>
+            <li>Intramuros Administration (intramuros.gov.ph)</li>
+            <li>UNESCO World Heritage Centre</li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 <a href="index.html">RidePinas</a>. Made with ❤️ for Filipino Riders</p>
+    </footer>
+</body>
+</html>
